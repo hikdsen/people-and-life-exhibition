@@ -78,7 +78,7 @@
             </div>
         
             <audio id="firstaudiodylan2">
-                <source src="media/dylan-1/keepitinside,limbo%20-%20How%20to%20Live.mp3" type="audio/mp3">
+                <source src="media/maxwell-1/s.wav" type="audio/wav">
             </audio>
     
             <div class="slider_container">
@@ -121,7 +121,7 @@
             </div>
         
             <audio id="firstaudiodylan4">
-                <source src="media/dylan-1/Parsalip%20-%20Freestyle%20Rip%20XXX.mp3" type="audio/mp3">
+                <source src="media/maxwell-1/alina.wav" type="audio/wav">
             </audio>
     
             <div class="slider_container">
@@ -189,9 +189,9 @@
     let current_time2 = document.getElementById("current-time2");
     let total_duration2 = document.getElementById("total-duration2")
     
-    song.onloadedmetadata = function(){
-        progress.max = song2.duration;
-        progress.value = song2.currentTime;
+    song2.onloadedmetadata = function(){
+        progress2.max = song2.duration;
+        progress2.value = song2.currentTime;
         total_duration2.numberValue = song2.duration;
         current_time2.numberValue = song2.currentTime;
     }
@@ -211,7 +211,7 @@
         }
     }
     
-    if(song.play()){
+    if(song2.play()){
         setInterval(()=>{
                      progress2.value = song2.currentTime;
         },500);
@@ -281,9 +281,9 @@
     let current_time4 = document.getElementById("current-time4");
     let total_duration4 = document.getElementById("total-duration4")
     
-    song.onloadedmetadata = function(){
-        progress.max = song4.duration;
-        progress.value = song4.currentTime;
+    song4.onloadedmetadata = function(){
+        progress4.max = song4.duration;
+        progress4.value = song4.currentTime;
         total_duration4.numberValue = song4.duration;
         current_time4.numberValue = song4.currentTime;
     }
@@ -302,7 +302,7 @@
         }
     }
     
-    if(song.play()){
+    if(song4.play()){
         setInterval(()=>{
                      progress4.value = song4.currentTime;
         },500);
@@ -340,7 +340,8 @@
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     
     <h4>speaker 3</h4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>第二张图片的话，能看到中间有一对亲密的情侣，分别身穿蓝色和绿色的衣服，他们坐在一个礁石的岸边。画面的远端是连绵的高山和一些住宅，然后呢，他们可以通过这片辽阔的海看到眺望到对方对面的那那些高山和楼房。整个的画面处理的色调大概是一种昏黄的感觉。然后呢，画面呢，也感觉是一种老胶片的风格，会让人联想到一种。比较。怎么说，历久弥新的爱情是这样的感觉</p>
+    <p>这张照片会让人联想说，哎，这对情侣他们是为什么来到这儿？来到这儿他们是干什么？是约会呢，还是说畅聊一些未来的一些理想，或者对爱情的愿景？嗯，可能远眺这些楼房，更多的是反映了一种他们可能怀揣着一些买房的想法呀，或者什么，只是可能站在我的视角上有这样的一些联想，另外的话，这样一个开阔和宁静的场面，让这对情侣氛围感觉到了一种很恬静很闲适的感觉。远处的光线会比较明亮啊。嗯，可能是啊。太阳落山之前，天还比较亮的时候，所以的话，可以想象到，如果太阳落山之后，他们可能有更美好的爱情故事发生</p>
     
     <h4>speaker 4</h4>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>

@@ -121,7 +121,7 @@
             </div>
         
             <audio id="firstaudiodylan4">
-                <source src="media/dylan-1/Parsalip%20-%20Freestyle%20Rip%20XXX.mp3" type="audio/mp3">
+                <source src="media/dylan-5/alina.wav" type="audio/wav">
             </audio>
     
             <div class="slider_container">
@@ -131,6 +131,50 @@
             </div>
     </div>
 
+    </div>
+    
+    <div class="total-player-3">
+        
+    <div class="player">
+        <div class="wrapper">
+            <h5>speaker 5</h5>
+            <div class="control">
+
+                <div onclick="playPause6()"><i class="fas fa-regular fa-circle-play" id="ctrlicon6"></i></div>
+
+            </div>
+        
+            <audio id="firstaudiodylan6">
+                <source src="media/dylan-5/s.wav" type="audio/wav">
+            </audio>
+    
+            <div class="slider_container">
+                <input type="range" min="1" max="100" value="0" class="seek_slider4" onchange="seekTo()" id="progress6">
+            </div>
+    
+            </div>
+    </div>
+        
+    <div class="player">
+        <div class="wrapper">
+            <h5>speaker 6</h5>
+            <div class="control">
+
+                <div onclick="playPause7()"><i class="fas fa-regular fa-circle-play" id="ctrlicon7"></i></div>
+
+            </div>
+        
+            <audio id="firstaudiodylan7">
+                <source src="media/maxwell-2/s.wav" type="audio/wav">
+            </audio>
+    
+            <div class="slider_container">
+                <input type="range" min="1" max="100" value="0" class="seek_slider4" onchange="seekTo()" id="progress7">
+            </div>
+    
+            </div>
+    </div>
+        
     </div>
     
 <!----audio script 1---->
@@ -285,9 +329,9 @@
     let current_time4 = document.getElementById("current-time4");
     let total_duration4 = document.getElementById("total-duration4")
     
-    song.onloadedmetadata = function(){
-        progress.max = song4.duration;
-        progress.value = song4.currentTime;
+    song4.onloadedmetadata = function(){
+        progress4.max = song4.duration;
+        progress4.value = song4.currentTime;
         total_duration4.numberValue = song4.duration;
         current_time4.numberValue = song4.currentTime;
     }
@@ -306,7 +350,7 @@
         }
     }
     
-    if(song.play()){
+    if(song4.play()){
         setInterval(()=>{
                      progress4.value = song4.currentTime;
         },500);
@@ -321,7 +365,46 @@
     }
 </script>
     
+<!----audio script 5---->
     
+<script>
+    let progress6 = document.getElementById("progress6");
+    let song6 = document.getElementById("firstaudiodylan6");
+    let ctrlicon6 = document.getElementById("ctrlicon6");
+    
+    song6.onloadedmetadata = function(){
+        progress6.max = song6.duration;
+        progress6.value = song6.currentTime;
+    }
+    
+    function playPause6(){
+        if(ctrlicon6.classList.contains("fa-pause")){
+            song6.pause();
+            ctrlicon6.classList.remove("fa-pause");
+            ctrlicon6.classList.add("fa-circle-play");
+        }
+        else{
+            song6.play();
+            ctrlicon6.classList.add("fa-pause");
+            ctrlicon6.classList.remove("fa-circle-play");
+
+        }
+    }
+    
+    if(song6.play()){
+        setInterval(()=>{
+                     progress6.value = song6.currentTime;
+        },500);
+    }
+    progress6.onchange = function(){
+        song6.play();
+        song6.currentTime = progress6.value;
+        ctrlicon6.classList.add("fa-pause");
+        ctrlicon6.classList.remove("fa-circle-play");
+        current_time6 = song6.currentTime;
+        
+    }
+</script>
     
     
     
@@ -344,7 +427,10 @@
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     
     <h4>speaker 3</h4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>第七张画面的话，也是一张黑白基调处理的图片，嗯，是一个小男孩儿，他位于画面的下边，然后呢，他冲着画面的斜右上方在玩儿那个。这个叫什么礼花儿啊，就是可以放出像那个突突突突放出李花儿的这个小小场馆啊，然后呢，整个画面的话，是在高楼大厦的背景下呈现出来的感觉是一个在市区放烟花的小男孩儿，然后呢，背后的话有三位路人，可然后有两位是牵着手的父亲和一个小朋友，然后另外一个画室另有一位女白衣服的女士正朝着画面的右下右下方走过来</p>
+    <p>然后这个烟花捕捉的特别的好，他能看到缕缕的白烟，还有这个烟火往外喷射的样子，感觉他快门调的速度和这个画面感，让人感觉到一种很凝很。恰到好处的一种氛围，如果让我想象的话，他背景音乐可能会放那个过年春节的什么金蛇狂舞啊，或者说这种感觉，因为是一种很热闹的一种氛围，家里面的电视机里正在放着春晚，然后这小朋友在除夕夜就出来放烟花</p>
+    <p>让我感受到的整个画面的话，是在疫情的时候，春节放烟火的小男孩儿，小男孩儿半耸着肩，感觉有点紧张和恐惧，他戴着口罩，让所以让我判断出这个应该是疫情期间的样子，那在城市中是因为背后它是些高楼大厦的，可能是在小区或者公寓楼前面，然后放的那一个特别喜欢烟火的小孩儿，可能在这个城市。烟花禁令下，没办法，玩的很尽兴，只能偷偷摸摸，违反这个政府的规定，然后再寻找着开心，放着这个礼花，所以能体现出一个小朋友对于话，对于烟花的这种喜爱，然后？</p>
+
     
     <h4>speaker 4</h4>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>

@@ -104,7 +104,7 @@
             </div>
         
             <audio id="firstaudiodylan3">
-                <source src="media/dylan-1/Morello%20Twins,The%20Chainsmokers%20-%20Honest%20(Morello%20Twins%20Remix).mp3" type="audio/mp3">
+                <source src="media/chloe-2/alina.wav" type="audio/wav">
             </audio>
     
             <div class="slider_container">
@@ -124,7 +124,7 @@
             </div>
         
             <audio id="firstaudiodylan4">
-                <source src="media/dylan-1/Parsalip%20-%20Freestyle%20Rip%20XXX.mp3" type="audio/mp3">
+                <source src="media/chloe-2/s.wav" type="audio/wav">
             </audio>
     
             <div class="slider_container">
@@ -241,9 +241,9 @@
     let current_time3 = document.getElementById("current-time3");
     let total_duration3 = document.getElementById("total-duration3")
     
-    song.onloadedmetadata = function(){
-        progress.max = song3.duration;
-        progress.value = song3.currentTime;
+    song3.onloadedmetadata = function(){
+        progress3.max = song3.duration;
+        progress3.value = song3.currentTime;
         total_duration3.numberValue = song3.duration;
         current_time3.numberValue = song3.currentTime;
     }
@@ -263,7 +263,7 @@
         }
     }
     
-    if(song.play()){
+    if(song3.play()){
         setInterval(()=>{
                      progress3.value = song3.currentTime;
         },500);
@@ -287,9 +287,9 @@
     let current_time4 = document.getElementById("current-time4");
     let total_duration4 = document.getElementById("total-duration4")
     
-    song.onloadedmetadata = function(){
-        progress.max = song4.duration;
-        progress.value = song4.currentTime;
+    song4.onloadedmetadata = function(){
+        progress4.max = song4.duration;
+        progress4.value = song4.currentTime;
         total_duration4.numberValue = song4.duration;
         current_time4.numberValue = song4.currentTime;
     }
@@ -308,7 +308,7 @@
         }
     }
     
-    if(song.play()){
+    if(song4.play()){
         setInterval(()=>{
                      progress4.value = song4.currentTime;
         },500);

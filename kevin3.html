@@ -121,7 +121,7 @@
             </div>
         
             <audio id="firstaudiodylan4">
-                <source src="media/dylan-1/Parsalip%20-%20Freestyle%20Rip%20XXX.mp3" type="audio/mp3">
+                <source src="media/kevin-3/alina.wav" type="audio/wav">
             </audio>
     
             <div class="slider_container">
@@ -284,9 +284,9 @@
     let current_time4 = document.getElementById("current-time4");
     let total_duration4 = document.getElementById("total-duration4")
     
-    song.onloadedmetadata = function(){
-        progress.max = song4.duration;
-        progress.value = song4.currentTime;
+    song4.onloadedmetadata = function(){
+        progress4.max = song4.duration;
+        progress4.value = song4.currentTime;
         total_duration4.numberValue = song4.duration;
         current_time4.numberValue = song4.currentTime;
     }
@@ -305,7 +305,7 @@
         }
     }
     
-    if(song.play()){
+    if(song4.play()){
         setInterval(()=>{
                      progress4.value = song4.currentTime;
         },500);
@@ -343,7 +343,9 @@
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     
     <h4>speaker 3</h4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>第六张图的画面，它主体最显眼的是一个三轮的货车，然后这个货车的话，面朝的是画面的右前方，然后朝着观众的方向啊，它中间有一扇独眼灯，然后呢，一个，比较宽的一个前是玻璃，它停在的是一个房门口，那这个房门右侧的话是一个大铁链子和栅栏，然后背后的话是一个白色的建筑的一个墙角，然后整个货车，这个三轮车的话，后面是个货都啊，然后呢，可能可以拉些货物.</p>
+    <p>它的整个画面是以黑白灰的颜色进行处理的，嗯，然后呢，通过光影的判断来说，这个应该是一个中午的时候，因为影子都比较短，然后光线是从右上方斜射下来，嗯。这个场景营造出一种杂乱。的一种感觉，可能是在一个乡下的小院子旁边啊，拍摄到了一个街景，然后呢，整个画面给人的感受就是，比较。嗯，很乡村的感觉，因为首先这个三轮车是啊，破破旧旧的，它前面啊。灯和我们这个，嗯，挡水板都已经被压弯了，然后呢，车顶上的玻璃上还可能挂一朵花儿啊，人质人造的小花儿</p>
+    <p>那整个画面的话，因为没有人物，只有这些静物，所以它能呈现出来的故事比较少，但是如果让观众想象的话，可能想象到这是一户人家，他们发家致富用的一个农用货车，那平时在在货物，然后如果孩子上学的话，那个背后还能载着小孩儿去学校送孩子，你接送孩子，所以能想象到的是一幅在中国农村的一个比较和谐和睦家庭的场景</p>
     
     <h4>speaker 4</h4>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>

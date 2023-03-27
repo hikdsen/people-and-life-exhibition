@@ -121,7 +121,7 @@
             </div>
         
             <audio id="firstaudiodylan4">
-                <source src="media/dylan-1/Parsalip%20-%20Freestyle%20Rip%20XXX.mp3" type="audio/mp3">
+                <source src="media/kevin-1/alina.wav" type="audio/wav">
             </audio>
     
             <div class="slider_container">
@@ -131,6 +131,50 @@
             </div>
     </div>
 
+    </div>
+    
+    <div class="total-player-3">
+        
+    <div class="player">
+        <div class="wrapper">
+            <h5>speaker 5</h5>
+            <div class="control">
+
+                <div onclick="playPause6()"><i class="fas fa-regular fa-circle-play" id="ctrlicon6"></i></div>
+
+            </div>
+        
+            <audio id="firstaudiodylan6">
+                <source src="media/kevin-1/s.wav" type="audio/wav">
+            </audio>
+    
+            <div class="slider_container">
+                <input type="range" min="1" max="100" value="0" class="seek_slider4" onchange="seekTo()" id="progress6">
+            </div>
+    
+            </div>
+    </div>
+        
+    <div class="player">
+        <div class="wrapper">
+            <h5>speaker 6</h5>
+            <div class="control">
+
+                <div onclick="playPause7()"><i class="fas fa-regular fa-circle-play" id="ctrlicon7"></i></div>
+
+            </div>
+        
+            <audio id="firstaudiodylan7">
+                <source src="media/maxwell-2/s.wav" type="audio/wav">
+            </audio>
+    
+            <div class="slider_container">
+                <input type="range" min="1" max="100" value="0" class="seek_slider4" onchange="seekTo()" id="progress7">
+            </div>
+    
+            </div>
+    </div>
+        
     </div>
     
 <!----audio script 1---->
@@ -284,9 +328,9 @@
     let current_time4 = document.getElementById("current-time4");
     let total_duration4 = document.getElementById("total-duration4")
     
-    song.onloadedmetadata = function(){
-        progress.max = song4.duration;
-        progress.value = song4.currentTime;
+    song4.onloadedmetadata = function(){
+        progress4.max = song4.duration;
+        progress4.value = song4.currentTime;
         total_duration4.numberValue = song4.duration;
         current_time4.numberValue = song4.currentTime;
     }
@@ -305,7 +349,7 @@
         }
     }
     
-    if(song.play()){
+    if(song4.play()){
         setInterval(()=>{
                      progress4.value = song4.currentTime;
         },500);
@@ -316,6 +360,47 @@
         ctrlicon4.classList.add("fa-pause");
         ctrlicon4.classList.remove("fa-circle-play");
         current_time4 = song4.currentTime;
+        
+    }
+</script>
+  
+<!----audio script 5---->
+    
+<script>
+    let progress6 = document.getElementById("progress6");
+    let song6 = document.getElementById("firstaudiodylan6");
+    let ctrlicon6 = document.getElementById("ctrlicon6");
+    
+    song6.onloadedmetadata = function(){
+        progress6.max = song6.duration;
+        progress6.value = song6.currentTime;
+    }
+    
+    function playPause6(){
+        if(ctrlicon6.classList.contains("fa-pause")){
+            song6.pause();
+            ctrlicon6.classList.remove("fa-pause");
+            ctrlicon6.classList.add("fa-circle-play");
+        }
+        else{
+            song6.play();
+            ctrlicon6.classList.add("fa-pause");
+            ctrlicon6.classList.remove("fa-circle-play");
+
+        }
+    }
+    
+    if(song6.play()){
+        setInterval(()=>{
+                     progress6.value = song6.currentTime;
+        },500);
+    }
+    progress6.onchange = function(){
+        song6.play();
+        song6.currentTime = progress6.value;
+        ctrlicon6.classList.add("fa-pause");
+        ctrlicon6.classList.remove("fa-circle-play");
+        current_time6 = song6.currentTime;
         
     }
 </script>
@@ -343,7 +428,9 @@
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     
     <h4>speaker 3</h4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>第四张照片是个在比较晚的时间，然后在一个街的丁字路口有一家画面中间的报刊亭或者说小卖部，然后它里面亮着比较，明亮的灯光和背后这个丁字路口，黑暗的树形成了鲜明的对比。这个画面中呢，可以看到这个报刊亭位于画面1/3的位置，背后的话在这个路的拐角栅栏之后是一个小区，说明这个报刊亭是在一个小区的外面，那小区的楼房的话稍显一些破旧啊，但是它白色的墙漆还是能很轻易的看出来。画面中可以看到明显的位置是有两位。两个人</p>
+    <p>一位是正准备过马路的一个青年人，然后另一位是在这个报刊亭，或者说小卖部买东西的顾客，报刊亭里面应该还有他的收银员，隐隐约约能看见，但是不能确定是一个或者两个人，然后这个报刊亭里陈列的一些玩具，饮料，或者说烟和零食还是挺丰富的。整个画面其的灯光是很温暖的，让人感受到了在这个晚上，这个有丰富颜色的这个小卖部里面，能看到更多丰富的内容给人们一种，在寂寞晚上一种能丰富自己，不管是内心还是不光是自己，胃口的一种小小的满足。</p>
+    <p>这个画面外给人一种车水马龙的感觉。但是这个画面里的话，是一种比较安静，比较温暖的感受，从这个温暖的灯光和它偏暖的色调中可以体现出来。然后呢，嗯，事情发展的话，可能这个女孩儿就从画面的左边过街了，在画面中间的这个顾客可能买完东西边吃着东西边离开了这个画面。然后呢，还会有新的顾客又过来这个商店继续买东西</p>
     
     <h4>speaker 4</h4>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
